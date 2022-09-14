@@ -996,6 +996,7 @@
         display: flex;
         align-items: center;
         margin-right: 4px;
+        user-select: none;
     }
 
     .license-link {
@@ -1012,11 +1013,21 @@
     }
 
     .checkbox-icon {
-        fill: var(--main-text-color);
         margin-right: 7px;
     }
 
-    .checkbox:checked + .checkbox-icon {
+    .checkbox-icon .unchecked {
+        opacity: 1;
+
+        fill: var(--main-text-color);
+    }
+
+    .checkbox-icon .checked {
+        opacity: 0;
+    }
+
+    .checkbox:checked + .checkbox-icon .checked {
+        opacity: 1;
+        
         fill: var(--link-color);
-       background-image: url(../images/icon_check.svg);
     }
