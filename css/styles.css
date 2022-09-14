@@ -1030,6 +1030,4 @@
 
     .checkbox:checked + .checkbox-icon .checked {
         opacity: 1;
-
-        fill: var(--link-color);
     }
