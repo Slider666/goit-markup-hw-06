@@ -1017,17 +1017,19 @@
     }
 
     .checkbox-icon .unchecked {
-        opacity: 1;
-
         fill: var(--main-text-color);
+
+        transition: opacity 250ms;
     }
 
     .checkbox-icon .checked {
         opacity: 0;
+
+        transition: opacity 250ms;
     }
 
     .checkbox:checked + .checkbox-icon .checked {
         opacity: 1;
-        
+
         fill: var(--link-color);
     }
