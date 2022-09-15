@@ -407,17 +407,15 @@
 
             <div class="footer-email">
                 <h3 class="footer-title">Підпишіться на розсилку</h3>
-                <div class="footer-subscribe">
-                    <form>
-                        <input class="footer-mail" type="email" name="email" id="email" placeholder="E-mail">
-                    </form>
-                    
+
+                <form class="footer-subscribe">
+                    <input class="footer-mail" type="email" name="email" id="e-mail" placeholder="E-mail">
                     <button class="email-button" type="submit">Підписатися
                         <svg class="footer-socail-icon boobs" width="24" height="24">
                             <use href="./images/icons.svg#telega"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>           
         </div>
     </footer>
@@ -461,7 +459,7 @@
                 </div>
 
                 <label class="label-title" for="comment">Коментар</label>
-                <textarea name="comments" id="comment" rows="10" placeholder="Введіть текст"></textarea>
+                <textarea class="comment" name="comments" id="comment" rows="10" placeholder="Введіть текст"></textarea>
 
                 <div class="license">
                     <Label class="license-label" for="license">
@@ -476,12 +474,9 @@
                     </a>
                 </div>
 
-            </form>
-
-            <button class="modal-button" type="submit">Відправити</button>
-            
+                <button class="modal-button" type="submit">Відправити</button>
+            </form>            
         </div>
-        
     </div>
 
     <!-- Скрипт -->

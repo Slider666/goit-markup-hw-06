@@ -579,7 +579,7 @@
 
     .footer-block {
         display: flex;
-        align-items: center;
+        align-items: baseline;
     }
 
     .container address {
@@ -616,7 +616,7 @@
     }
 
     .footer-links {
-        margin: 12px 0 40px 70px;
+        margin-left: 70px;
     }
 
     .footer-title {
@@ -660,7 +660,7 @@
     }
 
     .footer-email {
-        margin: 12px 0 34px 93px;
+        margin-left: auto;
     }
 
     .footer-subscribe {
@@ -884,7 +884,7 @@
         transform: translate(-50%, -50%);
 
         width: 528px;
-        height: 581px;
+        min-height: 581px;
         padding: 40px;
 
         background-color: var(--pure-white);
@@ -922,6 +922,8 @@
         top: 11px;
         left: 12px;
         fill: var(--main-text-color);
+
+        transition: fill 250ms var(--timing-function);
     }
 
 
@@ -934,7 +936,9 @@
 
     .modal-form input {
         border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: var(--border-radius)
+        border-radius: var(--border-radius);
+
+        transition: border-color 250ms var(--timing-function);
     }
 
     .modal-form input:hover,
@@ -948,14 +952,16 @@
         height: 40px;
     }
 
-    .modal-form textarea {
+    .modal-form .comment {
         padding: 12px 16px;
         border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: var(--border-radius)
+        border-radius: var(--border-radius);
+
+        transition: border-color 250ms var(--timing-function);
     }
 
-    .modal-form textarea:hover,
-    .modal-form textarea:focus {
+    .modal-form .comment:hover,
+    .modal-form .comment:focus {
         border: 1px solid var(--link-color);
         outline: 0;
     }
@@ -974,7 +980,7 @@
         color: rgba(117, 117, 117, 0.5);
     }
 
-    textarea {
+    .comment {
         resize: none;
         height: 120px;
         margin-bottom: 20px;
